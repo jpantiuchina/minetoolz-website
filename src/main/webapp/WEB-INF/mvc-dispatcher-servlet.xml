@@ -2,13 +2,12 @@
        xmlns:mvc="http://www.springframework.org/schema/mvc"
        xmlns:context="http://www.springframework.org/schema/context"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:schemaLocation="
-        http://www.springframework.org/schema/beans
-        http://www.springframework.org/schema/beans/spring-beans.xsd
-        http://www.springframework.org/schema/mvc
-        http://www.springframework.org/schema/mvc/spring-mvc.xsd
-        http://www.springframework.org/schema/context
-        http://www.springframework.org/schema/context/spring-context.xsd">
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans.xsd
+                           http://www.springframework.org/schema/mvc
+                           http://www.springframework.org/schema/mvc/spring-mvc.xsd
+                           http://www.springframework.org/schema/context
+                           http://www.springframework.org/schema/context/spring-context.xsd">
 
     <context:component-scan base-package="com.minetoolz.website"/>
 
@@ -17,10 +16,15 @@
         <property name="suffix" value=".jsp"/>
     </bean>
 
+    <mvc:resources mapping="/favicon.ico" location="/resources/"/>
     <mvc:resources mapping="/js/**" location="/resources/js/"/>
     <mvc:resources mapping="/images/**" location="/resources/images/"/>
     <mvc:resources mapping="/css/**" location="/resources/css/"/>
 
-    <mvc:annotation-driven />
+    <!--<mvc:interceptors>-->
+        <!--<bean class="com.minetoolz.website.util.LayoutTemplate"/>-->
+    <!--</mvc:interceptors>-->
+
+    <mvc:annotation-driven/>
 
 </beans>
