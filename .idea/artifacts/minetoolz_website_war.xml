@@ -1,5 +1,5 @@
 <component name="ArtifactManager">
-  <artifact type="war" build-on-make="true" name="minetoolz-website:war">
+  <artifact type="war" name="minetoolz-website:war">
     <output-path>$PROJECT_DIR$/target</output-path>
     <root id="archive" name="minetoolz-website.war">
       <element id="artifact" artifact-name="minetoolz-website:war exploded" />

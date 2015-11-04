@@ -1,11 +1,14 @@
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xmlns:tx="http://www.springframework.org/schema/tx"
        xmlns:context="http://www.springframework.org/schema/context"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans
                            http://www.springframework.org/schema/beans/spring-beans.xsd
                            http://www.springframework.org/schema/mvc
                            http://www.springframework.org/schema/mvc/spring-mvc.xsd
+                           http://www.springframework.org/schema/tx
+                           http://www.springframework.org/schema/tx/spring-tx.xsd
                            http://www.springframework.org/schema/context
                            http://www.springframework.org/schema/context/spring-context.xsd">
 
@@ -16,6 +19,20 @@
         <property name="suffix" value=".jsp"/>
     </bean>
 
+
+    <bean id="entityManagerFactory"
+          class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean">
+        <property name="persistenceUnitName" value="MainPersistenceUnit" />
+    </bean>
+
+
+    <bean id="transactionManager" class="org.springframework.orm.jpa.JpaTransactionManager">
+        <property name="entityManagerFactory" ref="entityManagerFactory" />
+    </bean>
+
+
+
+
     <mvc:resources mapping="/favicon.ico" location="/resources/"/>
     <mvc:resources mapping="/resources/bootstrap/**" location="classpath:/META-INF/resources/webjars/bootstrap/"/>
     <mvc:resources mapping="/resources/jquery/**" location="classpath:/META-INF/resources/webjars/jquery/"/>
@@ -25,5 +42,7 @@
     <!--<mvc:resources mapping="/css/**" location="/resources/css/"/>-->
 
     <mvc:annotation-driven/>
+    <tx:annotation-driven transaction-manager="transactionManager"/>
+
 
 </beans>

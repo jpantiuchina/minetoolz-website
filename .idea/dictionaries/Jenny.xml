@@ -2,12 +2,21 @@
   <dictionary name="Jenny">
     <words>
       <w>DOCTYPE</w>
+      <w>addon</w>
+      <w>autodetection</w>
+      <w>bozen</w>
+      <w>doctype</w>
+      <w>dropdown</w>
+      <w>glyphicon</w>
       <w>jumbotron</w>
+      <w>mailto</w>
       <w>minetoolz</w>
       <w>navbar</w>
+      <w>scrollbar</w>
       <w>toolz</w>
       <w>webapp</w>
       <w>webjars</w>
+      <w>xmlns</w>
     </words>
   </dictionary>
 </component>
