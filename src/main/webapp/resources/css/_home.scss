@@ -1,0 +1,48 @@
+@import "common";
+
+.my-toolbox {
+    width: 263px;
+    height: 217px;
+    float: right;
+}
+
+@media (max-width: 767px) {
+    .my-toolbox { width: 184px; height: 152px }
+}
+
+@media (max-width: 512px) {
+    .my-toolbox { display: none }
+}
+
+.jumbotron {
+
+    background: -moz-radial-gradient(center, ellipse cover, #ffffff 0%, #efefef 100%);
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#ffffff), color-stop(100%,#efefef));
+    background: -webkit-radial-gradient(center, ellipse cover, #ffffff 0%,#efefef 100%);
+    background: -o-radial-gradient(center, ellipse cover, #ffffff 0%,#efefef 100%);
+    background: -ms-radial-gradient(center, ellipse cover, #ffffff 0%,#efefef 100%);
+    background: radial-gradient(ellipse at center, #ffffff 0%,#efefef 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#efefef',GradientType=1 );
+
+    h1 {
+        margin-top: 0;
+        color: $second-color
+    }
+    p {
+        color: $main-color
+    }
+
+    margin-bottom: 0;
+}
+
+//
+//@media (min-width: 768px) and (max-width: 979px) {
+//    .row > .col-sm-3:nth-child(2n+1) {
+//        clear: both;
+//        margin-left: 0;
+//    }
+//
+//    .row .col-sm-3 {
+//        width: 48.61878453038674%;
+//    }
+//}

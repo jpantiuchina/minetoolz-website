@@ -1,0 +1,78 @@
+@import "common";
+
+
+.navbar {
+    margin-bottom: 0;
+    img { display: inline; vertical-align: -3px }
+}
+
+
+.navbar-inverse {
+    background-color: $main-color;
+    border-color: $second-color;
+
+    .navbar-nav > li > a,
+    .navbar-nav > li > a:hover,
+    .navbar-nav > li > a:focus,
+    .navbar-brand,
+    .navbar-brand:hover,
+    .navbar-brand:focus {
+        color: white
+    }
+
+    .navbar-nav > li > a:hover,
+    .navbar-nav > li > a:focus {
+        text-decoration: underline;
+    }
+
+    .navbar-nav > .active > a,
+    .navbar-nav > .active > a:hover,
+    .navbar-nav > .active > a:focus {
+        background-color: $second-color;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+// Footer
+
+
+html {
+    position: relative;
+    min-height: 100%
+}
+
+$footerHeight: 44px;
+
+body {
+    margin-bottom: $footerHeight + 20px
+}
+
+
+footer {
+    width: 100%;
+    background: #fbfbfb;
+    border-top: solid 1px #efefef;
+    position: absolute;
+    bottom: 0;
+    height: $footerHeight;
+
+
+    color: #787878;
+    a { color: inherit; text-decoration: underline }
+
+    font-size: 12px;
+
+    img { vertical-align: middle }
+
+    .my-row {  line-height: 24px; height: 24px; padding-top: 10px }
+    //.pull-left, .pull-right { padding: 10px 0; }
+}

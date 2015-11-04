@@ -1,0 +1,20 @@
+@import "common";
+
+
+.login-form {
+    max-width: 30em;
+    padding: 5px 30px 15px;
+    margin: 50px auto;
+    background: #f7f7f7;
+
+    $border-radius: 5px;
+    -webkit-border-radius: $border-radius;
+    -moz-border-radius: $border-radius;
+    border-radius: $border-radius;
+
+    $shadow: rgba(0, 0, 0, 0.05) 0 0 0 1px, #afafaf 0 14px 50px 0;
+    -webkit-box-shadow: $shadow;
+    -moz-box-shadow: $shadow;
+    box-shadow: $shadow;
+
+}

@@ -1,271 +1,154 @@
-<%@ page contentType="text/html" pageEncoding="UTF-8" %>
+<%@ include file="common.jsp" %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>MineToolz</title>
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <link href="css/desktop.css" rel="stylesheet" type="text/css"/>
-    <meta name="viewport" content="width=device-width, maximum-scale=1.0, minimum-scale=1.0, initial-scale=1.0"/>
-    <link href="css/tablet.css" rel="stylesheet" type="text/css" media="only screen and (max-width:980px)"/>
-    <link href="css/mobile.css" rel="stylesheet" type="text/css" media="only screen and (max-width:480px)"/>
-    <script type="text/javascript" src="js/script.js"></script>
-    <script type="text/javascript" src="js/cookie.js"></script>
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,800' rel='stylesheet' type='text/css'/>
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'/>
-    <script src="js/easing.js" type="text/javascript"></script>
-    <script type="text/javascript">
-    setTimeout(function(){var a=document.createElement("script");
-      var b=document.getElementsByTagName("script")[0];
-      a.src=document.location.protocol+"//script.crazyegg.com/pages/scripts/0040/0683.js?"+Math.floor(new Date().getTime()/3600000);
-      a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
-
-    </script>
-    <script type="text/javascript">
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-              (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-    ga('create', 'UA-67750985-1', 'auto');
-    ga('send', 'pageview');
-
-    </script>
-    <script type="text/javascript">
-    $(document).ready(function(){
-      if ($.cookie('alert')) {
-        $( ".cookies-info" ).css("display","none");
-      }
-      $("#accept").click(function() {
-        $( ".cookies-info" ).slideUp( "slow" );
-        // set the cookie for 24 hours
-        var date = new Date();
-        date.setTime(date.getTime() + 30 *24 * 60 * 60 * 1000);
-        $.cookie('alert', true, { expires: date });
-      });
-    })
-
-    </script>
+    <link href="/resources/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+    <%--<link href="/resources/bootstrap/3.3.5/css/bootstrap-theme.min.css" rel="stylesheet">--%>
+    <script src="/resources/jquery/1.11.1/jquery.min.js"></script>
+    <script src="/resources/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="/resources/js/site.js"></script>
+    <link href="/resources/css/site.css" rel="stylesheet">
 </head>
 <body>
-<div id="wrapper">
-    <div id="header">
-        <div id="header-left">
-            <div id="logo">
-                <img src="images/magic.png" width="" height="36" alt="logo" id="image-logo"/>
-            </div>
+
+
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">
+                <img src="/resources/images/logo.png" width="34" height="19">
+                MineToolz
+            </a>
         </div>
-        <div id="header-right">
-            <div id="category">
-                <img src="images/category.png" width="20" height="18" alt="category" id="image-category"/>
-            </div>
-            <div id="login">
-                <img src="images/login.png" width="11" height="18" alt="login" id="image-login"/>
-            </div>
-            <div id="register">
-                <img src="images/register.png" width="18" height="18" alt="register" id="image-register"/>
-            </div>
+        <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li class=active><a href="/">Home</a></li>
+                <li><a href="/">Tools</a></li>
+                <li><a href="/">About Us</a></li>
+                <li><a href="/">Contacts</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#">Login</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">Separated link</a></li>
+                    </ul>
+                </li>
+            </ul>
         </div>
     </div>
-    <div style="clear:both"></div>
-    <div id="page-wrapper">
-        <div id="page-1">
-            <div id="left-block">
-                <div class="banner-text" id="banner-1">Baby steps with us now, Giant</div>
-                <div class="banner-text">leaps on your own tomorrow.</div>
-                <div id="email-send">
-                    <input type="text" id="email-txt" value="Leave your email for updates at minetoolz.com"/>
-                </div>
-                <div id="mail">
-                    <img src="images/mail.png" id="image-mail" alt="mail"/>
-                </div>
-            </div>
-            <div id="right-block">
-                <div id="image-front-page">
-                    <img src="images/toolbox.png" alt="toolbox" id="image-toolbox"/>
-                </div>
-            </div>
-        </div>
-        <div id="page">
-            <div id="start-click">
-                <div id="skip-1">
-                    <img src="images/skip.png" width="30px" height="15px" alt="skip" id="image-skip-1"/>
-                </div>
-                <div id="startnow">
-                    Start now
-                </div>
-            </div>
-            <div style="clear:both"></div>
-            <div id="dotted">
-                <div class="heightfix-1"></div>
-                <div id="page-2">
-                    <div id="seven-tool">
-                        <img src="images/number_circle.png" width="52px" height="52px" alt="seven" id="seven-image"/>
-                    </div>
-                    <div id="para-1">
-                        <div id="text-1-1">
-                            Tools to ignite your business idea
-                        </div>
-                        <div id="text-1-2">
-                            into Startup.
-                        </div>
-                    </div>
-                    <div id="plane-newbie">
-                        <img src="images/paper-plane.png" alt="paper-plane" id="image-paper-plane"/>
-                    </div>
-                </div>
-                <div style="clear:both"></div>
-                <div id="skip-2">
-                    <img src="images/skip.png" width="30px" height="15px" alt="skip" id="image-skip-2"/>
-                </div>
-                <div id="next-set">
-                    Next set of tools to steer
-                </div>
-                <div style="clear:both"></div>
-                <div class="heightfix-2"></div>
-                <div id="second-tool">
-                    <div id="page-3">
-                        <div id="dotted-tool">
-                            <img src="images/seven-plus.jpg" alt="seven-plus" width="52px" height="52px"
-                                 id="image-seven-plus"/>
-                        </div>
-                        <div id="para-2">
-                            <div id="text-2-1">
-                                Tools to pilot your Startup
-                            </div>
-                        </div>
-                        <div id="wing-plane">
-                            <img src="images/wing-plane.png" alt="wing-plane" id="image-wing-plane"/>
-                        </div>
-                    </div>
-                </div>
-                <div style="clear:both"></div>
-                <div id="skip-3">
-                    <img src="images/skip.png" width="30px" height="15px" alt="skip" id="image-skip-3"/>
-                </div>
-                <div id="accelerate">
-                    Next set of tools to accelerate
-                </div>
-                <div style="clear:both"></div>
-                <div class="heightfix-3"></div>
-                <div id="final-tool">
-                    <div id="page-4">
-                        <div id="dotted-tool-2">
-                            <img src="images/seven-plus.jpg" alt="seven-plus" width="52px" height="52px"
-                                 id="image-seven-plus-2"/>
-                        </div>
-                        <div id="para-3">
-                            <div id="text-3-1">
-                                Tools to speed-up your Startup
-                            </div>
-                        </div>
-                        <div id="glider">
-                            <img src="images/glider.png" alt="glider" id="image-glider"/>
-                        </div>
-                    </div>
-                </div>
-                <div style="clear:both"></div>
-                <div id="skip-4">
-                    <img src="images/skip.png" width="30px" height="15px" alt="skip" id="image-skip-4"/>
-                </div>
-                <div id="see-category">
-                    See category
-                </div>
-                <div style="clear:both"></div>
-                <div id="category-list">
-                    <div class="heightfix-4"></div>
-                    <div id="page-5">
-                        <div class="block-1">
-                            <div class="rotating-dashed">
-                                <div class="image1">
-                                    <img src="images/p.png" alt="p" id="p" width="52" height="52"/>
-                                </div>
-                                <div class="text-header"></div>
-                                <div class="more-text">Tools to support prototype and validation of innovation products
-                                    and services
-                                </div>
-                            </div>
-                        </div>
-                        <div class="block-1">
-                            <div class="image1">
-                                <img src="images/t.png" alt="t" id="t" width="52" height="52"/>
-                            </div>
-                            <div class="text-header"></div>
-                            <div class="more-text">Tools to support teamwork of highly dynamic and motivated
-                                entrepreneur
-                            </div>
-                        </div>
-                        <div style="clear:both"></div>
-                        <div class="block-1">
-                            <div class="image1">
-                                <img src="images/m.png" alt="m" id="m" width="52" height="52"/>
-                            </div>
-                            <div class="text-header"></div>
-                            <div class="more-text">Tools to support customer discovery and market research</div>
-                        </div>
-                        <div class="block-1">
-                            <div class="image1">
-                                <img src="images/f.png" alt="f" id="f" width="52" height="52"/>
-                            </div>
-                            <div class="text-header"></div>
-                            <div class="more-text">Tools to support search for investment and financial management</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div style="clear:both"></div>
-    <div class="cookies-info">
-        We are using cookies to give you the best experience on our site. Cookies are files stored in your browser and
-        are used by most websites to help personalise your web experience. By continuing to use our website without
-        changing the settings, you are agreeing to our use of cookies.
+</nav>
 
-        <div id="accept">OK</div>
-        <div id="more-info">
-            <a href="http://www.cookielaw.org/how-we-use-cookies/" id="more-link" target="_blank">More info</a>
-        </div>
-    </div>
-    <div id="footer">
 
-        <div id="footer-left">
-            <div id="footer-left-section">
-                <div id="unibz">
-                    <img src="images/unibz.png" alt="unibz" id="image-unibz"/>
-                </div>
-                <div id="copyright">
-                    &copy;Minetoolz.com&nbsp;&nbsp;2015&nbsp;&nbsp;&nbsp;&nbsp;Bozen-Bolzano
-                </div>
-            </div>
-        </div>
-        <div id="footer-right">
-            <div id="footer-section-right">
-                <div id="email">
-                    <a href="mailto:info@minetoolz.com" id="outlook">info@minetoolz.com</a>
-                </div>
-                <div class="sepa"></div>
-                <div id="submit-resource">Submit a resource</div>
-                <div class="sepa"></div>
-                <div id="share">Share
-                    <div id="button">
-                        <div id="facebook-button">
-                            <a href="https://www.facebook.com/mine.toolz" target="_blank">
-                                <img src="images/facebook.png" width="20px" height="20px" alt="facebook"
-                                     id="image-facebook"/>
-                            </a>
-                        </div>
-                        <div id="twitter-button">
-                            <a href="https://twitter.com/minetoolz" target="_blank">
-                                <img src="images/twitter.png" width="20px" height="20px" alt="facebook"
-                                     id="image-twitter"/>
-                            </a>
-                        </div>
-                    </div>
-                </div>
 
+<div class="jumbotron">
+    <div class="container">
+        <img src="/resources/images/toolbox.png" class="my-toolbox">
+        <h1>Right tools at the right time.</h1>
+        <p>Browse dozens of useful tools for your startup</p>
+        <p><a class="btn btn-success btn-lg" href="/" role="button">Watch the video</a></p>
+        <form class="form-inline" style="margin-top: 30px">
+            <div class="form-group form-group-xs">
+                <label class="sr-only" for="email">Email:</label>
+                <input type="email" class="form-control input-xs" size="40" id="email" name="email" placeholder="Email">
             </div>
-        </div>
+            <button type="submit" class="btn btn-info btn-xs">Subscribe for news</button>
+        </form>
     </div>
 </div>
+
+<div class="container">
+
+
+    <br>
+    <div class="row">
+        <div class="col-md-3">
+            <h2>IT &amp; Design</h2>
+            <p>Developing software and art.</p>
+            <p><a class="btn btn-default" href="#" role="button">IT &amp; Design Tools »</a></p>
+            <p>
+                <a href="">IDEs</a><br>
+                <a href="">Website</a><br>
+                <a href="">Version control systems</a><br>
+                <a href="">Prototyping</a><br>
+                <a href="">Sketching</a><br>
+                <a href="">3D</a><br>
+            </p>
+        </div>
+        <div class="col-md-3">
+            <h2>Collaboration</h2>
+            <p>How to work better together.</p>
+            <p><a class="btn btn-default" href="#" role="button">Collaborative Tools »</a></p>
+            <p>
+                <a href="">Issue trackers</a><br>
+                <a href="">Video conferences</a><br>
+                <a href="">Version control systems</a><br>
+                <a href="">Chats</a><br>
+                <a href="">Writing together</a><br>
+            </p>
+        </div>
+        <div class="col-md-3">
+            <h2>Marketing</h2>
+            <p>Ads and spamming.</p>
+            <p><a class="btn btn-default" href="/tasks" role="button">Marketing Tools »</a></p>
+            <p>
+                <a href="">Banner services</a><br>
+                <a href="">Newspaper ads</a><br>
+                <a href="">Spam tools</a><br>
+                <a href="">Annoying spam tools</a><br>
+            </p>
+        </div>
+        <div class="col-md-3">
+            <h2>Finance</h2>
+            <p>Keeping track of tons of dollars.</p>
+            <p><a class="btn btn-default" href="/contacts" role="button">Financial Tools »</a></p>
+            <p>
+                <a href="">Accounting</a><br>
+                <a href="">Payment systems</a><br>
+                <a href="">Banner services</a><br>
+            </p>
+        </div>
+    </div>
+
+</div>
+
+<footer>
+    <div class="container">
+        <div class="my-row">
+                <div class="pull-left">
+                    <a href="http://www.unibz.it/"><img src="/resources/images/unibz-logo-blue.png" width="30" height="24"></a>
+                    <span class="hidden-xs">
+                        &nbsp; © 2015 Free University of Bozen-Bolzano
+                    </span>
+                </div>
+
+                <%--<div class="col-sm-6 text-right">--%>
+                <div class="pull-right">
+                    <a href="/">Suggest a tool</a>
+                    &nbsp;
+                    <a href="mailto:info@minetoolz.com">info@minetoolz.com</a>
+                </div>
+                <%--</div>--%>
+
+        </div>
+    </div>
+</footer>
+
 </body>
 </html>
