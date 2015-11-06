@@ -7,7 +7,7 @@ import javax.persistence.*;
 import java.sql.Timestamp;
 
 @Entity
-public class Subscriber
+public class ToolSuggestion
 {
     @Id
     @Column(nullable = false)
@@ -15,8 +15,19 @@ public class Subscriber
     private int id;
 
     @NotEmpty
-    @Email
     @Column(nullable = false, length = 255)
+    private String tool;
+
+    @NotEmpty
+    @Column(nullable = false, length = 255)
+    private String website;
+
+    @Lob
+    @Column(nullable = false)
+    private String comments;
+
+    @Email
+    @Column(nullable = false)
     private String email;
 
     @Column(nullable = false, columnDefinition = "TIMESTAMP DEFAULT CURRENT_TIMESTAMP")
@@ -27,7 +38,7 @@ public class Subscriber
 
 
 
-    public Subscriber()
+    public ToolSuggestion()
     {
     }
 
@@ -42,14 +53,24 @@ public class Subscriber
         this.id = id;
     }
 
-    public String getEmail()
+    public String getWebsite()
     {
-        return email;
+        return website;
     }
 
-    public void setEmail(String email)
+    public void setWebsite(String website)
     {
-        this.email = email;
+        this.website = website;
+    }
+
+    public String getComments()
+    {
+        return comments;
+    }
+
+    public void setComments(String comments)
+    {
+        this.comments = comments;
     }
 
     public Timestamp getTimestamp()
@@ -70,5 +91,25 @@ public class Subscriber
     public void setIp(String ip)
     {
         this.ip = ip;
+    }
+
+    public String getTool()
+    {
+        return tool;
+    }
+
+    public void setTool(String tool)
+    {
+        this.tool = tool;
+    }
+
+    public String getEmail()
+    {
+        return email;
+    }
+
+    public void setEmail(String email)
+    {
+        this.email = email;
     }
 }

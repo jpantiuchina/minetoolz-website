@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="6ee5e3db-aab9-4462-a19b-410c8b654abc" name="startuptools.club" url="http://startuptools.club">
+        <fileTransfer host="startuptools.club" port="22" privateKey="$USER_HOME$/.ssh/id_rsa" accessType="SFTP" username="jpantiuchina" keyPair="true">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

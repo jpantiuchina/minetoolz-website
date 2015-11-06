@@ -2,8 +2,7 @@
 
 
 .navbar {
-    margin-bottom: 0;
-    img { display: inline; vertical-align: -3px }
+    .navbar-brand img { display: inline; vertical-align: -3px }
 }
 
 
@@ -32,11 +31,21 @@
     }
 }
 
+.nav-pills > li.active > a,
+.nav-pills > li.active > a:focus,
+.nav-pills > li.active > a:hover {
+    background-color: $main-color;
+}
 
 
+a {
+    color: $main-color;
+    text-decoration: underline;
+}
 
-
-
+.nav a, .navbar a, .btn {
+    text-decoration: none;
+}
 
 
 
