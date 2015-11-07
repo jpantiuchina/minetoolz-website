@@ -38,15 +38,6 @@
 }
 
 
-a {
-    color: $main-color;
-    text-decoration: underline;
-}
-
-.nav a, .navbar a, .btn {
-    text-decoration: none;
-}
-
 
 
 
@@ -62,7 +53,7 @@ html {
 $footerHeight: 44px;
 
 body {
-    margin-bottom: $footerHeight + 20px
+    margin-bottom: $footerHeight + 30px
 }
 
 

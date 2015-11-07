@@ -25,7 +25,7 @@
                 <div class="col-md-3">
                     <h2>IT &amp; Design</h2>
                     <p>Developing software and art.</p>
-                    <p><a class="btn btn-default" href="/tools/categories/it" role="button">IT &amp; Design Tools »</a></p>
+                    <p><a class="btn btn-default" href="/tools/categories/it/" role="button">IT &amp; Design Tools »</a></p>
                     <p>
                         <a href="">IDEs</a><br>
                         <a href="">Website</a><br>
@@ -38,7 +38,7 @@
                 <div class="col-md-3">
                     <h2>Collaboration</h2>
                     <p>How to work better together.</p>
-                    <p><a class="btn btn-default" href="/tools/categories/collaboration" role="button">Collaborative Tools »</a></p>
+                    <p><a class="btn btn-default" href="/tools/categories/collaboration/" role="button">Collaborative Tools »</a></p>
                     <p>
                         <a href="">Issue trackers</a><br>
                         <a href="">Video conferences</a><br>
@@ -50,7 +50,7 @@
                 <div class="col-md-3">
                     <h2>Marketing</h2>
                     <p>Ads and spamming.</p>
-                    <p><a class="btn btn-default" href="/tools/categories/marketing" role="button">Marketing Tools »</a></p>
+                    <p><a class="btn btn-default" href="/tools/categories/marketing/" role="button">Marketing Tools »</a></p>
                     <p>
                         <a href="">Banner services</a><br>
                         <a href="">Newspaper ads</a><br>
@@ -61,7 +61,7 @@
                 <div class="col-md-3">
                     <h2>Finance</h2>
                     <p>Keeping track of tons of dollars.</p>
-                    <p><a class="btn btn-default" href="/tools/categories/finance" role="button">Financial Tools »</a></p>
+                    <p><a class="btn btn-default" href="/tools/categories/finance/" role="button">Financial Tools »</a></p>
                     <p>
                         <a href="">Accounting</a><br>
                         <a href="">Payment systems</a><br>

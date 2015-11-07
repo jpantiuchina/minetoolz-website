@@ -2,7 +2,6 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ attribute name="title" required="true" %>
 <%@ attribute name="activeMenuItem" required="false" %>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -34,9 +33,9 @@
         <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
                 <li class="${activeMenuItem == 'home'     ? 'active' : ''}"><a href="/">Home</a></li>
-                <li class="${activeMenuItem == 'tools'    ? 'active' : ''}"><a href="/tools">Tools</a></li>
-                <li class="${activeMenuItem == 'about'    ? 'active' : ''}"><a href="/about">About Us</a></li>
-                <li class="${activeMenuItem == 'contacts' ? 'active' : ''}"><a href="/contacts">Contacts</a></li>
+                <li class="${activeMenuItem == 'tools'    ? 'active' : ''}"><a href="/tools/">Tools</a></li>
+                <li class="${activeMenuItem == 'about'    ? 'active' : ''}"><a href="/about/">About Us</a></li>
+                <li class="${activeMenuItem == 'contacts' ? 'active' : ''}"><a href="/contacts/">Contacts</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="#">Login</a></li>
@@ -74,7 +73,7 @@
 
             <%--<div class="col-sm-6 text-right">--%>
             <div class="pull-right">
-                <a href="/suggest-tool">Suggest a tool</a>
+                <a href="/suggest-tool/">Suggest a tool</a>
                 &nbsp;
                 <a href="mailto:info@minetoolz.com">info@minetoolz.com</a>
             </div>

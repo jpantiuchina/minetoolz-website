@@ -3,7 +3,7 @@
 
     <p>We are very cool.</p>
 
-    <h2>Scientific Research Behind All This</h2>
+    <h3>Scientific Research Behind All This</h3>
 
     <p>Bla bla bla</p>
 

@@ -1,23 +1,28 @@
 package com.minetoolz.website.models;
 
-import org.hibernate.validator.constraints.Email;
+import org.hibernate.validator.constraints.NotBlank;
 import org.hibernate.validator.constraints.NotEmpty;
 
 import javax.persistence.*;
-import java.sql.Timestamp;
+import java.util.List;
 
 @Entity
-public class Tool
+@Table(indexes = @Index(columnList = "urlName", unique = true))
+public final class Tool
 {
     @Id
-    @Column(nullable = false, length = 31)
-    private String id;
+    @Column(nullable = false)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private int id;
 
-    @NotEmpty
+    @Column(nullable = false, length = 31)
+    private String urlName;
+
+    @NotBlank
     @Column(nullable = false, length = 255)
     private String name;
 
-    @NotEmpty
+    @NotBlank
     @Column(nullable = false, length = 255)
     private String website;
 
@@ -26,26 +31,44 @@ public class Tool
     private String description;
 
     @Lob
-    @Column()
     private byte[] image;
 
-    @Column()
-    private byte[] imageType;
+    private String imageType;
 
 
-    public Tool()
+    @OneToMany(mappedBy = "tool")
+    @OrderBy
+    private List<UserRating> userRatings;
+
+
+    public List<UserRating> getUserRatings()
     {
+        return userRatings;
     }
 
+    public void addUserRating(UserRating userRating)
+    {
+        this.userRatings.add(userRating);
+    }
 
-    public String getId()
+    public int getId()
     {
         return id;
     }
 
-    public void setId(String id)
+    public void setId(int id)
     {
         this.id = id;
+    }
+
+    public String getUrlName()
+    {
+        return urlName;
+    }
+
+    public void setUrlName(String urlName)
+    {
+        this.urlName = urlName;
     }
 
     public String getName()
@@ -88,12 +111,12 @@ public class Tool
         this.image = image;
     }
 
-    public byte[] getImageType()
+    public String getImageType()
     {
         return imageType;
     }
 
-    public void setImageType(byte[] imageType)
+    public void setImageType(String imageType)
     {
         this.imageType = imageType;
     }

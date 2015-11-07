@@ -7,16 +7,25 @@ body {
 
 
 
+h1, h2 { margin-bottom: 20px }
 
 
-// override Bootstrap margin bottom
-
-//.glyphicon {
-//    width: 14px !important;
-//    height: 14px !important;
-//}
+a { color: $main-color; text-decoration: underline; }
+.nav a, .navbar a, .btn { text-decoration: none; }
 
 
+
+:target {
+    -webkit-animation: from-yellow-to-white 5s;
+       -moz-animation: from-yellow-to-white 5s;
+         -o-animation: from-yellow-to-white 5s;
+            animation: from-yellow-to-white 5s;
+
+    @-webkit-keyframes from-yellow-to-white { from { background: yellow } to { background: white  } }
+       @-moz-keyframes from-yellow-to-white { from { background: yellow } to { background: white  } }
+         @-o-keyframes from-yellow-to-white { from { background: yellow } to { background: white  } }
+            @keyframes from-yellow-to-white { from { background: yellow } to { background: white  } }
+}
 
 
 

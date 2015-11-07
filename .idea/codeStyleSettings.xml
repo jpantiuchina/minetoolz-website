@@ -4,10 +4,24 @@
     <option name="PER_PROJECT_SETTINGS">
       <value>
         <option name="AUTODETECT_INDENTS" value="false" />
+        <option name="IMPORT_LAYOUT_TABLE">
+          <value>
+            <package name="" withSubpackages="true" static="false" />
+            <emptyLine />
+            <package name="javax" withSubpackages="true" static="false" />
+            <package name="java" withSubpackages="true" static="false" />
+            <emptyLine />
+            <package name="com.minetoolz" withSubpackages="true" static="false" />
+            <emptyLine />
+            <package name="" withSubpackages="true" static="true" />
+          </value>
+        </option>
         <XML>
           <option name="XML_LEGACY_SETTINGS_IMPORTED" value="true" />
         </XML>
         <codeStyleSettings language="JAVA">
+          <option name="BLANK_LINES_BEFORE_PACKAGE" value="1" />
+          <option name="BLANK_LINES_AFTER_IMPORTS" value="2" />
           <option name="BRACE_STYLE" value="2" />
           <option name="CLASS_BRACE_STYLE" value="2" />
           <option name="METHOD_BRACE_STYLE" value="2" />

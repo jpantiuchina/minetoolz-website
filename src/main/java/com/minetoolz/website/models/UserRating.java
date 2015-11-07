@@ -5,29 +5,90 @@ import org.hibernate.validator.constraints.NotBlank;
 import org.hibernate.validator.constraints.NotEmpty;
 
 import javax.persistence.*;
+import javax.validation.constraints.Max;
+import javax.validation.constraints.Min;
+import javax.validation.constraints.NotNull;
 import java.sql.Timestamp;
 
 @Entity
-public final class Subscriber
+public final class UserRating
 {
     @Id
     @Column(nullable = false)
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
-    @NotBlank
     @Email
-    @Column(nullable = false, length = 255)
+    @Column(length = 127)
     private String email;
 
     @Column(nullable = false, columnDefinition = "TIMESTAMP DEFAULT CURRENT_TIMESTAMP")
     private Timestamp timestamp;
 
+
+    @ManyToOne(optional = false)
+    private Tool tool;
+
     @Column(nullable = false, length = 45)
     private String ip;
 
 
+    @NotBlank
+    @Column(nullable = false, length = 4000)
+    private String comment;
 
+    @NotBlank
+    @Column(nullable = false, length = 63)
+    private String name;
+
+
+    @Min(1)
+    @Max(5)
+    @NotNull(message = "Please rate the tool")
+    @Column(nullable = false)
+    private Integer starCount;
+
+
+
+    public Integer getStarCount()
+    {
+        return starCount;
+    }
+
+    public void setStarCount(Integer starCount)
+    {
+        this.starCount = starCount;
+    }
+
+    public String getComment()
+    {
+        return comment;
+    }
+
+    public void setComment(String comment)
+    {
+        this.comment = comment;
+    }
+
+    public String getName()
+    {
+        return name;
+    }
+
+    public void setName(String name)
+    {
+        this.name = name;
+    }
+
+    public Tool getTool()
+    {
+        return tool;
+    }
+
+    public void setTool(Tool tool)
+    {
+        this.tool = tool;
+    }
 
     public int getId()
     {

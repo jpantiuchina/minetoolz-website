@@ -1,24 +1,25 @@
 package com.minetoolz.website.models;
 
 import org.hibernate.validator.constraints.Email;
+import org.hibernate.validator.constraints.NotBlank;
 import org.hibernate.validator.constraints.NotEmpty;
 
 import javax.persistence.*;
 import java.sql.Timestamp;
 
 @Entity
-public class ToolSuggestion
+public final class ToolSuggestion
 {
     @Id
     @Column(nullable = false)
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
-    @NotEmpty
+    @NotBlank
     @Column(nullable = false, length = 255)
     private String tool;
 
-    @NotEmpty
+    @NotBlank
     @Column(nullable = false, length = 255)
     private String website;
 
@@ -26,6 +27,7 @@ public class ToolSuggestion
     @Column(nullable = false)
     private String comments;
 
+    @NotBlank
     @Email
     @Column(nullable = false)
     private String email;
@@ -37,10 +39,6 @@ public class ToolSuggestion
     private String ip;
 
 
-
-    public ToolSuggestion()
-    {
-    }
 
 
     public int getId()
