@@ -12,7 +12,7 @@
                 <form class="form-inline" method="post" style="margin-top: 30px">
                     <div class="form-group form-group-xs">
                         <label class="sr-only" for="email">Email:</label>
-                        <input type="email" class="form-control input-xs" size="40" id="email" name="email" placeholder="Email">
+                        <input required type="email" class="form-control input-xs" size="40" id="email" name="email" placeholder="Email">
                     </div>
                     <button type="submit" class="btn btn-info btn-xs">Subscribe for news</button>
                 </form>
