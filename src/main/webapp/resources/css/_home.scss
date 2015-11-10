@@ -4,13 +4,13 @@
 .my-home-page {
 
     .my-toolbox {
-        width: 263px;
-        height: 217px;
+        width: 324px;
+        height: 227px;
         float: right;
     }
 
     @media (max-width: 767px) {
-        .my-toolbox { width: 184px; height: 152px }
+        .my-toolbox { width: 227px; height: 159px }
     }
 
     @media (max-width: 512px) {

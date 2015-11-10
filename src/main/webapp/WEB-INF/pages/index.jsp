@@ -5,7 +5,7 @@
 
         <div class="jumbotron">
             <div class="container">
-                <img src="/resources/images/toolbox.png" class="my-toolbox">
+                <img src="/resources/images/tools.png" class="my-toolbox">
                 <h1>Right tools at the right time.</h1>
                 <p>Browse dozens of useful tools for your startup</p>
                 <p><a class="btn btn-success btn-lg" href="/" role="button">Watch the video</a></p>
