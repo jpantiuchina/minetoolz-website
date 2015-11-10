@@ -38,7 +38,7 @@
                 <li class="${activeMenuItem == 'contacts' ? 'active' : ''}"><a href="/contacts/">Contacts</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="#">Login</a></li>
+                <li><a href="/login/">Login</a></li>
             </ul>
         </div>
     </div>

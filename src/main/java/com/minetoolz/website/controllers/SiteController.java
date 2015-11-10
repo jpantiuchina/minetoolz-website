@@ -97,5 +97,12 @@ class SiteController
     {
         return "contacts";
     }
+
+    @RequestMapping("/login/")
+    public String login(ModelMap modelMap)
+    {
+        modelMap.addAttribute("message", "Coming soon... ");
+        return "message";
+    }
 }
 
