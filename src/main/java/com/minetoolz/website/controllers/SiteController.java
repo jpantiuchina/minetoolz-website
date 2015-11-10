@@ -104,5 +104,11 @@ class SiteController
         modelMap.addAttribute("message", "Coming soon... ");
         return "message";
     }
+
+    @RequestMapping("/guide/")
+    public String guide()
+    {
+        return "guide";
+    }
 }
 

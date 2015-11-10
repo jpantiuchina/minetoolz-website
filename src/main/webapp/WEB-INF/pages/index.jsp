@@ -8,7 +8,7 @@
                 <img src="/resources/images/tools.png" class="my-toolbox">
                 <h1>Right tools at the right time.</h1>
                 <p>Browse dozens of useful tools for your startup</p>
-                <p><a class="btn btn-success btn-lg" href="/" role="button">Watch the video</a></p>
+                <p><a class="btn btn-success btn-lg" href="/guide/" role="button">Guide Me</a></p>
                 <form class="form-inline" method="post" style="margin-top: 30px">
                     <div class="form-group form-group-xs">
                         <label class="sr-only" for="email">Email:</label>
