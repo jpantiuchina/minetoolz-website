@@ -3,7 +3,7 @@
   <component name="WebServers">
     <option name="servers">
       <webServer id="6ee5e3db-aab9-4462-a19b-410c8b654abc" name="startuptools.club" url="http://startuptools.club">
-        <fileTransfer host="startuptools.club" port="22" privateKey="$USER_HOME$/.ssh/id_rsa" accessType="SFTP" username="jpantiuchina" keyPair="true">
+        <fileTransfer host="startuptools.club" port="22" privateKey="$USER_HOME$/.ssh/id_rsa" rootFolder="/home/students/jpantiuchina" accessType="SFTP" username="jpantiuchina" keyPair="true">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" />
           </advancedOptions>

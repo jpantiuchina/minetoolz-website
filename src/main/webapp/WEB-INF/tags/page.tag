@@ -26,8 +26,7 @@
                 <span class="icon-bar"></span>
             </button>
             <a class="navbar-brand" href="/">
-                <img src="/resources/images/logo.png" width="34" height="19">
-                MineToolz
+                <img src="/resources/images/logo-full.png" width="141" height="23">
             </a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
