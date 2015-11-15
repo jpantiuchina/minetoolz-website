@@ -92,10 +92,10 @@ class SiteController
     }
 
 
-    @RequestMapping("/contacts/")
-    public String contacts()
+    @RequestMapping("/publications/")
+    public String publications()
     {
-        return "contacts";
+        return "publications";
     }
 
     @RequestMapping("/login/")
