@@ -29,32 +29,6 @@ class SiteController
     }
 
 
-    @Transactional
-    @RequestMapping(path = "/", method = RequestMethod.POST)
-    public String index(@Valid @ModelAttribute Subscriber subscriber,
-                        BindingResult bindingResult,
-                        ModelMap modelMap,
-                        HttpServletRequest request)
-    {
-        String message = "";
-
-        if (bindingResult.hasErrors())
-        {
-            for (ObjectError error : bindingResult.getAllErrors())
-                message += "Email " + error.getDefaultMessage();
-        }
-        else
-        {
-            subscriber.setIp(request.getRemoteAddr());
-            entityManager.persist(subscriber);
-            message = "Your email " + subscriber.getEmail() + " was recorded.";
-        }
-
-        modelMap.addAttribute("message", message);
-        return "message";
-    }
-
-
 
     @RequestMapping(path = "/suggest-tool/", method = RequestMethod.GET)
     public String suggestTool(@ModelAttribute ToolSuggestion toolSuggestion)
@@ -110,5 +84,31 @@ class SiteController
     {
         return "guide";
     }
+
+    @RequestMapping(path = "/subscribe/", method = RequestMethod.GET)
+    public String subscribe(@ModelAttribute Subscriber subscriber)
+    {
+        return "subscribe";
+    }
+
+
+    @Transactional
+    @RequestMapping(path = "/subscribe/", method = RequestMethod.POST)
+    public String index(@Valid @ModelAttribute Subscriber subscriber,
+                        BindingResult bindingResult,
+                        ModelMap modelMap,
+                        HttpServletRequest request)
+    {
+        if (bindingResult.hasErrors())
+            return "subscribe";
+
+        subscriber.setIp(request.getRemoteAddr());
+        entityManager.persist(subscriber);
+        modelMap.addAttribute("message", "Thank you! Your email " + subscriber.getEmail() + " was recorded.");
+        return "message";
+    }
+
+
+
 }
 

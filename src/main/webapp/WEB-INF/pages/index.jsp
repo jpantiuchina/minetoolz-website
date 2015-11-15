@@ -6,17 +6,11 @@
         <div class="jumbotron">
             <div class="container">
                 <img src="/resources/images/toolbox.png" class="my-toolbox">
-                <h1>Right tools at the right time.</h1>
-                <p>Browse dozens of useful tools for your startup</p>
+                <h1><a class="slogan" href="/guide/">Right tools at the right time.</a></h1>
+                <p>Selected tools for your startup</p>
                 <p><a class="btn btn-success btn-lg" href="/#/" role="button">Watch Video
                 </a></p>
-                <form class="form-inline" method="post" style="margin-top: 30px">
-                    <div class="form-group form-group-xs">
-                        <label class="sr-only" for="email">Email:</label>
-                        <input required type="email" class="form-control input-xs" size="40" id="email" name="email" placeholder="Email">
-                    </div>
-                    <button type="submit" class="btn btn-info btn-xs">Subscribe for news</button>
-                </form>
+
             </div>
         </div>
 
@@ -45,11 +39,10 @@
                 <%--</div>--%>
                 <%--<div class="col-md-4">.col-md-4</div>--%>
                 <%--<div class="col-md-4">.col-md-4</div>--%>
-            </div>
+                </div>
                 </c:forTokens>
+            </div>
         </div>
-
-    </div>
 
 
 

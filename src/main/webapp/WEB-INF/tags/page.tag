@@ -42,9 +42,6 @@
 </nav>
 
 
-
-
-
 <jsp:doBody/>
 
 
@@ -60,6 +57,8 @@
 
             <%--<div class="col-sm-6 text-right">--%>
             <div class="pull-right">
+                <a href="/subscribe/">Subscribe</a>
+                &nbsp;
                 <a href="/suggest-tool/">Suggest a tool</a>
                 &nbsp;
                 <a href="mailto:info@minetoolz.com">info@minetoolz.com</a>
