@@ -85,10 +85,10 @@ class SiteController
 
 
 
-    @RequestMapping("/about/")
-    public String about()
+    @RequestMapping("/contacts/")
+    public String contacts()
     {
-        return "about";
+        return "contacts";
     }
 
 

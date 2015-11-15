@@ -34,7 +34,7 @@
                 <li class="${activeMenuItem == 'home'         ? 'active' : ''}"><a href="/">Home</a></li>
                 <li class="${activeMenuItem == 'guide'        ? 'active' : ''}"><a href="/guide/">Quick Start</a></li>
                 <li class="${activeMenuItem == 'tools'        ? 'active' : ''}"><a href="/tools/">Tools</a></li>
-                <li class="${activeMenuItem == 'about'        ? 'active' : ''}"><a href="/about/">About Us</a></li>
+                <li class="${activeMenuItem == 'contacts'     ? 'active' : ''}"><a href="/contacts/">Contacts</a></li>
                 <li class="${activeMenuItem == 'publications' ? 'active' : ''}"><a href="/publications/">Publications</a></li>
             </ul>
         </div>
