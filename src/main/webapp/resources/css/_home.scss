@@ -3,6 +3,20 @@
 
 .my-home-page {
 
+
+    .jumbotron {
+
+        h1 {
+            margin-top: 0;
+            color: $second-color
+        }
+        p {
+            color: $main-color
+        }
+
+        margin: -20px 0 0;
+    }
+
     .my-toolbox {
         width: 356px;
         height: 277px;
@@ -17,36 +31,13 @@
         .my-toolbox { display: none }
     }
 
-    .jumbotron {
 
-        //background: -moz-radial-gradient(center, ellipse cover, #ffffff 0%, #efefef 100%);
-        //background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#ffffff), color-stop(100%,#efefef));
-        //background: -webkit-radial-gradient(center, ellipse cover, #ffffff 0%,#efefef 100%);
-        //background: -o-radial-gradient(center, ellipse cover, #ffffff 0%,#efefef 100%);
-        //background: -ms-radial-gradient(center, ellipse cover, #ffffff 0%,#efefef 100%);
-        //background: radial-gradient(ellipse at center, #ffffff 0%,#efefef 100%);
-        //filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#efefef',GradientType=1 );
-
-        h1 {
-            margin-top: 0;
-            color: $second-color
-        }
-        p {
-            color: $main-color
-        }
-
-        margin-top: -20px;
+    .tools {
+        padding-top: 20px;
+        background-image: url("/resources/images/planes.png");
+        background-repeat: no-repeat;
+        background-position-x: 50%;
+        background-position-y: top;
     }
 
-    //
-    //@media (min-width: 768px) and (max-width: 979px) {
-    //    .row > .col-sm-3:nth-child(2n+1) {
-    //        clear: both;
-    //        margin-left: 0;
-    //    }
-    //
-    //    .row .col-sm-3 {
-    //        width: 48.61878453038674%;
-    //    }
-    //}
 }

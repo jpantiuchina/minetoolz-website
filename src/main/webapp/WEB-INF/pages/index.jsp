@@ -14,16 +14,21 @@
             </div>
         </div>
 
-        <div class="container">
-            <div class="row">
-                <c:forEach var="tool" items="${tools}">
-                    <t:small-tool-box toolTitle="${tool.name}" urlName="${tool.urlName}" toolFooter="${tool.tinyDescription}"/>
-                </c:forEach>
+        <div class="tools">
+            <div class="container">
+                <div class="row">
+                    <c:forEach var="tool" items="${tools}">
+                        <t:small-tool-box toolTitle="${tool.name}" urlName="${tool.urlName}" toolFooter="${tool.tinyDescription}" style="clear"/>
+                        <t:small-tool-box toolTitle="${tool.name}" urlName="${tool.urlName}" toolFooter="${tool.tinyDescription}" style="clear"/>
+                        <t:small-tool-box toolTitle="${tool.name}" urlName="${tool.urlName}" toolFooter="${tool.tinyDescription}" style="clear"/>
+                        <t:small-tool-box toolTitle="${tool.name}" urlName="${tool.urlName}" toolFooter="${tool.tinyDescription}" style="clear"/>
+                        <t:small-tool-box toolTitle="${tool.name}" urlName="${tool.urlName}" toolFooter="${tool.tinyDescription}" style="clear"/>
+                        <t:small-tool-box toolTitle="${tool.name}" urlName="${tool.urlName}" toolFooter="${tool.tinyDescription}" style="clear"/>
+                    </c:forEach>
+                </div>
             </div>
-
         </div>
-        <div class="col-md-4 col-sm-6">
-</div>
+    </div>
         <%--<div class="container">--%>
             <%--<div class="row">--%>
 
