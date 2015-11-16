@@ -6,7 +6,7 @@
 
         <div class="col-sm-6">
             <div class="thumbnail">
-                <img src="/resources/images/google-docs.png" alt="">
+                <img src="/resources/images/bigxtensio.png" alt="">
             </div>
 
         </div>

@@ -40,9 +40,10 @@ class ToolController
                        ModelMap modelMap)
     {
         Tool tool = getToolByUrlName(urlName);
-        tool.setName("Google Docs");
-        tool.setWebsite("http://drive.google.com");
-        tool.setDescription("Google Docs, Google Sheets and Google Slides are a word processor, a spreadsheet and a presentation program respectively, all part of a free, web-based software office suite offered by Google within its Google Drive service. The suite allows users to create and edit documents online while collaborating with other users in real-time.");
+        tool.setName("Xtensio");
+        tool.setWebsite("http://xtensio.com/");
+        tool.setDescription("Xtensio was born out of the need for easy-to-use tools to help entrepreneurs plan, strategize, and develop their startup. It is a toolbox that is not only offering presentation tools but also interactive templates that will be useful during research, brainstorming, planning and strategy phases of a company. The first set of tools include User Persona Creator, One Pager Builder, Lean Canvas Creator, Fundraising Summary, SWOT Analysis, and Blank Slate – live page building features for monthly reports, html banners, sales pitches, etc.\n\n" +
+                "All the tools are free.");
         modelMap.addAttribute("tool", tool);
 
         Hibernate.initialize(tool.getUserRatings());

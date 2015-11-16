@@ -27,10 +27,10 @@
 
                 <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
                     <div class="thumbnail">
-                        <a href="/tools/google-docs/"><img src="/resources/images/google-docs.png" alt=""></a>
+                        <a href="/tools/google-docs/"><img src="/resources/images/xtensio.png" alt=""></a>
                         <div class="caption">
-                            <h4><a href="/tools/google-docs/">Google Docs</a></h4>
-                            <p>You can write text together like you are sharing one computer with many keyboards.</p>
+                            <%--<h4><a href="/tools/google-docs/">Xtensio</a></h4>--%>
+                            <p>A toolbox for your startup, helping you organise your thoughts, make decisions and present ideas.</p>
                         </div>
                     </div>
                 </div>
