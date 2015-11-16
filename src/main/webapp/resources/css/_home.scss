@@ -14,7 +14,7 @@
             color: $main-color
         }
 
-        margin: -20px 0 0;
+        margin-top: -20px;
     }
 
     .my-toolbox {
@@ -29,15 +29,6 @@
 
     @media (max-width: 512px) {
         .my-toolbox { display: none }
-    }
-
-
-    .tools {
-        padding-top: 20px;
-        background-image: url("/resources/images/planes.png");
-        background-repeat: no-repeat;
-        background-position-x: 50%;
-        background-position-y: top;
     }
 
 }
