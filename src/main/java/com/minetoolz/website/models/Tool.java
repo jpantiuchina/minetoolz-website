@@ -26,9 +26,13 @@ public final class Tool
     @Column(nullable = false, length = 255)
     private String website;
 
+    @NotBlank
+    @Column(nullable = false, length = 255)
+    private String tinyDescription;
+
     @Lob
     @Column(nullable = false)
-    private String description;
+    private String fullDescriptionHtml;
 
     @Lob
     private byte[] image;
@@ -91,14 +95,25 @@ public final class Tool
         this.website = website;
     }
 
-    public String getDescription()
+
+    public String getTinyDescription()
     {
-        return description;
+        return tinyDescription;
     }
 
-    public void setDescription(String description)
+    public void setTinyDescription(String tinyDescription)
     {
-        this.description = description;
+        this.tinyDescription = tinyDescription;
+    }
+
+    public String getFullDescriptionHtml()
+    {
+        return fullDescriptionHtml;
+    }
+
+    public void setFullDescriptionHtml(String fullDescriptionHtml)
+    {
+        this.fullDescriptionHtml = fullDescriptionHtml;
     }
 
     public byte[] getImage()

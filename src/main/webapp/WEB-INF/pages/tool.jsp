@@ -6,12 +6,14 @@
 
         <div class="col-sm-6">
             <div class="thumbnail">
-                <img src="/resources/images/bigxtensio.png" alt="">
+                <img src="/resources/images/tools/screenshots/${tool.urlName}.png" alt="">
             </div>
 
         </div>
         <div class="col-sm-6">
-            <p style="white-space:pre-line"><c:out value="${tool.description}"/></p>
+
+            ${tool.fullDescriptionHtml}
+
             <p><a href="<c:out value="${tool.website}"/>"><c:out value="${tool.website}"/></a></p>
 
         </div>
@@ -19,27 +21,29 @@
     </div>
 
 
+    <c:if test="${not empty tool.userRatings}">
 
-    <h2>User Comments</h2>
+        <h2>User Comments</h2>
 
 
-    <c:forEach var="userRating" items="${tool.userRatings}">
+        <c:forEach var="userRating" items="${tool.userRatings}">
 
-        <div class="media" id="comment-<c:out value="${userRating.id}"/>">
-            <div class="media-body">
-                <h4 class="media-heading">
-                    <c:out value="${userRating.name}"/>
-                    <span> </span>
-                    <span style="color: goldenrod">
-                        <c:forEach begin="1" end="${userRating.starCount}">&#x2605;</c:forEach>
-                    </span>
-                </h4>
-                <c:out value="${userRating.comment}"/>
+            <div class="media" id="comment-${userRating.id}">
+                <div class="media-body">
+                    <h4 class="media-heading">
+                        <c:out value="${userRating.name}"/>
+                        <span> </span>
+                        <span style="color: goldenrod">
+                            <c:forEach begin="1" end="${userRating.starCount}">&#x2605;</c:forEach>
+                        </span>
+                    </h4>
+                    <c:out value="${userRating.comment}"/>
+                </div>
             </div>
-        </div>
 
-    </c:forEach>
+        </c:forEach>
 
+    </c:if>
 
 
 

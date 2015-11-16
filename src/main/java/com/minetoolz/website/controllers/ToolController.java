@@ -40,10 +40,7 @@ class ToolController
                        ModelMap modelMap)
     {
         Tool tool = getToolByUrlName(urlName);
-        tool.setName("Xtensio");
-        tool.setWebsite("http://xtensio.com/");
-        tool.setDescription("Xtensio was born out of the need for easy-to-use tools to help entrepreneurs plan, strategize, and develop their startup. It is a toolbox that is not only offering presentation tools but also interactive templates that will be useful during research, brainstorming, planning and strategy phases of a company. The first set of tools include User Persona Creator, One Pager Builder, Lean Canvas Creator, Fundraising Summary, SWOT Analysis, and Blank Slate – live page building features for monthly reports, html banners, sales pitches, etc.\n\n" +
-                "All the tools are free.");
+
         modelMap.addAttribute("tool", tool);
 
         Hibernate.initialize(tool.getUserRatings());

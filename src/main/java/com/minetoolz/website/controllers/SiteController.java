@@ -23,8 +23,10 @@ class SiteController
     private EntityManager entityManager;
 
     @RequestMapping(path = "/", method = RequestMethod.GET)
-    public String index()
+    public String index(ModelMap modelMap)
     {
+        modelMap.addAttribute("tools", entityManager.createQuery(
+            "SELECT t FROM Tool t ORDER BY name").getResultList());
         return "index";
     }
 
