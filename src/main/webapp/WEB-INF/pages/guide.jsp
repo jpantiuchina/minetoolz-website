@@ -5,11 +5,11 @@
 
         <div class="row">
 
-            <t:small-tool-box toolNumber="1" style="clean" toolTitle="Xtensio-one tool for everything" urlName="xtensio" toolFooter="Reccomended by Dron"/>
+            <t:small-tool-box toolNumber="1" style="clean" toolTitle="Communication Tool" urlName="trello" toolFooter="Reccomended by Dron"/>
 
-            <t:small-tool-box toolNumber="2" style="clean" toolTitle="Create your Logo" urlName="xtensio" toolFooter="Reccomended by Dron"/>
+            <t:small-tool-box toolNumber="2" style="clean" toolTitle="Create your Logo" urlName="balsamiq" toolFooter="Reccomended by Dron"/>
 
-            <t:small-tool-box toolNumber="3" style="clean" toolTitle="Make video" urlName="xtensio" toolFooter="Reccomended by Xiao"/>
+            <t:small-tool-box toolNumber="3" style="clean" toolTitle="Make video" urlName="zapier" toolFooter="Reccomended by Xiao"/>
 
         </div>
 
