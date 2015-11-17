@@ -2,10 +2,27 @@
 
 body {
     overflow-y: scroll;
+    color: $darkest-color;
 }
 
 
+.btn-success {
+    color: #fff;
+    background-color: $main-color;
+    border-color: $darkest-color;
+}
 
+.btn-success:hover {
+    color: #fff;
+    background-color: $second-color;
+    border-color: $darkest-color;
+}
+
+
+.panel-default>.panel-heading, .panel-footer {
+    color: $darkest-color;
+    background-color: $jumbotron-background;
+}
 
 h1, h2 { margin-bottom: 20px }
 
@@ -13,8 +30,13 @@ h1, h2 { margin-bottom: 20px }
 a { color: $main-color; text-decoration: underline; }
 .nav a, .navbar a, .btn, a.list-group-item, a.slogan { text-decoration: none; }
 
+a:focus, a:hover {
+    color: $second-color;
+}
 
-
+.jumbotron {
+background: $jumbotron-background;
+}
 :target {
     -webkit-animation: from-yellow-to-white 5s;
        -moz-animation: from-yellow-to-white 5s;
@@ -27,6 +49,10 @@ a { color: $main-color; text-decoration: underline; }
             @keyframes from-yellow-to-white { from { background: yellow } to { background: white  } }
 }
 
+.well {
+    background-color: $jumbotron-background;
+    color: $darkest-color;
+}
 
 
 

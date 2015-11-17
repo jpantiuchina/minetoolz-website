@@ -11,6 +11,36 @@
     <title>MineToolz - <c:out value="${title}"/></title>
     <link href="/resources/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
     <link href="/resources/css/site.css" rel="stylesheet">
+
+    <!--Start of Zopim Live Chat Script-->
+    <script type="text/javascript">
+        window.$zopim||(function(d,s){var z=$zopim=function(c){
+            z._.push(c)},$=z.s=
+                d.createElement(s),e=d.getElementsByTagName(s)[0];z.set=function(o){z.set.
+        _.push(o)};z._=[];z.set._=[];$.async=!0;$.setAttribute('charset','utf-8');
+            $.src='//v2.zopim.com/?3SqrqmFAGAQmGERk8GkGpG01RfqwMP7d';z.t=+new Date;$.
+                    type='text/javascript';e.parentNode.insertBefore($,e)})(document,'script');
+    </script>
+    <!--End of Zopim Live Chat Script-->
+
+    <script>
+        $zopim(function() {
+            $zopim.livechat.cookieLaw.comply();
+
+//            $zopim.livechat.cookieLaw.setDefaultImplicitConsent();
+            $zopim.livechat.window.setTitle('Ask About Startup Tools');
+            $zopim.livechat.button.setColor('#3b9ca6');
+//            $zopim.livechat.button.hide();
+//            $zopim.livechat.window.hide();
+            $zopim.livechat.badge.hide();
+
+            $zopim.livechat.theme.reload(); // apply new theme settings
+
+        });
+
+    </script>
+
+
 </head>
 <body>
 

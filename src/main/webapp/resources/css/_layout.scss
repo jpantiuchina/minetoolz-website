@@ -59,14 +59,14 @@ body {
 
 footer {
     width: 100%;
-    background: #fbfbfb;
-    border-top: solid 1px #efefef;
+    background: $jumbotron-background;
+    border-top: solid 1px $dark-grey-color;
     position: absolute;
     bottom: 0;
     height: $footerHeight;
 
 
-    color: #787878;
+    color: $darkest-color;
     a { color: inherit; text-decoration: underline }
 
     font-size: 12px;
@@ -75,4 +75,5 @@ footer {
 
     .my-row {  line-height: 24px; height: 24px; padding-top: 10px }
     //.pull-left, .pull-right { padding: 10px 0; }
+
 }
