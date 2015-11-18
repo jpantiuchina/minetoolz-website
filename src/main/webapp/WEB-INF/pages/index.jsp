@@ -7,7 +7,7 @@
             <div class="container">
                 <img src="/resources/images/toolbox.png" class="my-toolbox">
                 <h1><a class="slogan" href="/guide/">Right tools at the right time.</a></h1>
-                <p>Selected tools for your startup</p>
+                <p>We give you the tools. You do the rest.</p>
                 <p><a class="btn btn-success btn-lg" href="/#/" role="button">Watch Video
                 </a></p>
 
@@ -21,7 +21,7 @@
                         <t:small-tool-box toolTitle="${tool.name}" urlName="${tool.urlName}" toolFooter="${tool.tinyDescription}" style="clear"/>
                     </c:forEach>
                 </div>
-                <div>
+                <div class="planes">
                     <img src="/resources/images/planes.png" style="width: 100%">
                 </div>
             </div>

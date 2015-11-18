@@ -9,7 +9,7 @@
 
             <t:small-tool-box toolNumber="2" style="clean" toolTitle="Start with an amazing logo. It's free!" urlName="logogarden" toolFooter="Our logo maker is an easy to use logo design tool that will help kickstart your entrepreneurial dreams. Our only focus is entrepreneurs."/>
 
-            <t:small-tool-box toolNumber="3" style="clean" toolTitle="Make video" urlName="zapier" toolFooter="Test. No tool"/>
+            <t:small-tool-box toolNumber="3" style="clean" toolTitle="wevideo " urlName="wevideo" toolFooter="Easily create outstanding videos"/>
 
         </div>
 

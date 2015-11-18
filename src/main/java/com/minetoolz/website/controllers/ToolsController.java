@@ -190,13 +190,13 @@ class ToolsController
                 "with our FREE logo maker.");
         entityManager.persist(tool);
 
-//        tool = new Tool();
-//        tool.setTinyDescription("");
-//        tool.setUrlName("");
-//
-//        entityManager.persist(tool);
-
-
+        tool = new Tool();
+        tool.setTinyDescription("Easily create outstanding videos");
+        tool.setUrlName("wevideo");
+        tool.setName("wevideo");
+        tool.setWebsite("https://www.wevideo.com");
+        tool.setFullDescriptionHtml("A powerful, yet easy-to-use, cloud-based collaborative video creation platform. Advanced when you need it. Basic when you don’t. Imagination, not automation. You control the look of your video including transitions, fast/slow motion, Green Screen, and more!");
+        entityManager.persist(tool);
 
 
         return "redirect:";
