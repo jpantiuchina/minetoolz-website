@@ -171,10 +171,32 @@ class ToolsController
         entityManager.persist(tool);
 
 
+        tool = new Tool();
+        tool.setTinyDescription("Want to get most in one package only?");
+        tool.setUrlName("xtensio");
+        tool.setName("Xtensio");
+        tool.setWebsite("http://xtensio.com");
+        tool.setFullDescriptionHtml("<p> Xtensio was born out of the need for easy-to-use tools to help entrepreneurs plan, strategize, and develop their startup. It is a toolbox that is not only offering presentation tools but also interactive templates that will be useful during research, brainstorming, planning and strategy phases of a company. The first set of tools include User Persona Creator, One Pager Builder, Lean Canvas Creator, Fundraising Summary, SWOT Analysis, and Blank Slate – live page building features for monthly reports, html banners, sales pitches, etc.\n" +
+                "All the tools are free. " );
+
+        entityManager.persist(tool);
+
+        tool = new Tool();
+        tool.setTinyDescription("Start with an amazing logo");
+        tool.setUrlName("logogarden");
+        tool.setName("Logogarden");
+        tool.setWebsite("http://www.logogarden.com/");
+        tool.setFullDescriptionHtml("LogoGarden is devoted to helping entrepreneurs grow a powerful brand"+
+                "with our FREE logo maker.");
+        entityManager.persist(tool);
+
 //        tool = new Tool();
+//        tool.setTinyDescription("");
 //        tool.setUrlName("");
 //
 //        entityManager.persist(tool);
+
+
 
 
         return "redirect:";
