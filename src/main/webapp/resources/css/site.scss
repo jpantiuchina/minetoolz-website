@@ -22,6 +22,7 @@ body {
 .panel-default>.panel-heading, .panel-footer {
     color: $darkest-color;
     background-color: $jumbotron-background;
+    text-align: center;
 }
 
 h1, h2 { margin-bottom: 20px }
