@@ -1,12 +1,14 @@
 <%@ include file="common.jsp" %>
 <%--@elvariable id="tool" type="com.minetoolz.website.models.Tool"--%>
-<t:page-with-header title="${tool.name}" activeMenuItem="tools">
+<t:layout-with-header title="${tool.name}" activeMenuItem="tools">
 
     <div class="row">
 
         <div class="col-sm-6">
             <div class="thumbnail">
-                <img src="/resources/images/tools/screenshots/${tool.urlName}.png" alt="">
+                <a href="/resources/images/tools/screenshots/${tool.urlName}.png">
+                    <img src="/resources/images/tools/screenshots/${tool.urlName}.png" alt="">
+                </a>
             </div>
 
         </div>
@@ -14,7 +16,7 @@
 
             ${tool.fullDescriptionHtml}
 
-            <p><a href="<c:out value="${tool.website}"/>"><c:out value="${tool.website}"/></a></p>
+            <p><a target="_blank" href="<c:out value="${tool.website}"/>"><c:out value="${tool.website}"/></a></p>
 
         </div>
 
@@ -76,5 +78,5 @@
 
 
 
-</t:page-with-header>
+</t:layout-with-header>
 

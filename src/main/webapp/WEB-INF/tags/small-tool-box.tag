@@ -25,7 +25,7 @@
                     <h3 class="panel-title" style="text-align: center">
                         <span class="pull-left">${toolNumber}</span>
                         <b>${toolTitle}</b>
-                        <span class="pull-right" style="color:#f5f5f5">${toolNumber}</span>
+                        <span class="pull-right" style="color:rgba(255,255,255,0)">${toolNumber}</span>
                     </h3>
                 </div>
                 <div class="panel-body" style="text-align: center">

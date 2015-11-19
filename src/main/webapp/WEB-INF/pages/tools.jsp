@@ -1,6 +1,6 @@
 <%@ include file="common.jsp" %>
 <%--@elvariable id="tools" type="java.util.List<com.minetoolz.website.models.Tool>"--%>
-<t:page-with-header title="Tools" activeMenuItem="tools">
+<t:layout-with-header title="Tools" activeMenuItem="tools">
 
 
 
@@ -50,5 +50,5 @@
 
 
 
-</t:page-with-header>
+</t:layout-with-header>
 

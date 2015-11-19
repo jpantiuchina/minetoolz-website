@@ -1,6 +1,7 @@
 package com.minetoolz.website.controllers;
 
 import com.minetoolz.website.models.Subscriber;
+import com.minetoolz.website.models.Tool;
 import com.minetoolz.website.models.ToolSuggestion;
 import org.springframework.stereotype.Controller;
 import org.springframework.transaction.annotation.Transactional;
@@ -15,6 +16,8 @@ import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import javax.servlet.http.HttpServletRequest;
 import javax.validation.Valid;
+import java.util.List;
+
 
 @Controller
 class SiteController
@@ -30,7 +33,16 @@ class SiteController
         return "index";
     }
 
-
+    //added because of error in guide page
+    @RequestMapping(path = "/guide/", method = RequestMethod.GET)
+    public String guide(ModelMap modelMap)
+    {
+        List<Tool> tools = entityManager.createQuery("SELECT t FROM Tool t ORDER BY name", Tool.class).
+                getResultList();
+        modelMap.addAttribute("tools", tools);
+        return "guide";
+    }
+    //end
 
     @RequestMapping(path = "/suggest-tool/", method = RequestMethod.GET)
     public String suggestTool(@ModelAttribute ToolSuggestion toolSuggestion)

@@ -1,5 +1,5 @@
 <%@ include file="common.jsp" %>
-<t:page-with-header title="Sugest a Tool">
+<t:layout-with-header title="Sugest a Tool">
 
     <t:form modelAttribute="toolSuggestion" submitButtonLabel="Suggest">
 
@@ -16,4 +16,4 @@
 
 
 
-</t:page-with-header>
+</t:layout-with-header>
