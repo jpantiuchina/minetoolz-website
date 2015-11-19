@@ -30,11 +30,14 @@
                 <t:small-tool-box toolNumber="3" toolTitle="wevideo " urlName="wevideo"
                                   toolFooter="Easily create outstanding videos"/>
             </div>
+
+            <div class="planes">
+                <img src="/resources/images/planes.png" style="width: 100%">
+            </div>
+
         </div>
 
-        <div class="planes">
-            <img src="/resources/images/planes.png" style="width: 100%">
-        </div>
+
 
         <%--<div class="container">--%>
             <%--<div class="guide">--%>
