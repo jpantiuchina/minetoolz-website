@@ -14,18 +14,19 @@
             </div>
         </div>
 
-        <%--<div class="tools">--%>
             <div class="container">
+
                 <div class="row">
-                    <c:forEach var="tool" items="${tools}">
-                        <t:small-tool-box toolTitle="${tool.name}" urlName="${tool.urlName}" toolFooter="${tool.tinyDescription}" style="clear"/>
-                    </c:forEach>
+
+                    <t:small-tool-box toolNumber="1" toolTitle="Xtensio" urlName="xtensio" toolFooter="Want to get most in one package only?"/>
+
+                    <t:small-tool-box toolNumber="2" toolTitle="Logogarden" urlName="logogarden" toolFooter="Start with an amazing logo. It's free!"/>
+
+                    <t:small-tool-box toolNumber="3" toolTitle="wevideo " urlName="wevideo" toolFooter="Easily create outstanding videos"/>
+
                 </div>
-                <div class="planes">
-                    <img src="/resources/images/planes.png" style="width: 100%">
-                </div>
+
             </div>
-        <%--</div>--%>
 
 
     </div>
