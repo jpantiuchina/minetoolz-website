@@ -9,11 +9,11 @@
 
                 <h1><a class="slogan" href="/guide/">Right&nbsptools at&nbspthe&nbspright&nbsptime.</a></h1>
 
-                <p>Do you have your <b style="color: green">Startup</b> idea?</p>
+                <%--<p>Do you have your <b style="color: green">Startup</b> idea?</p>--%>
                 <p>No time, no knowledge, no money? No problem!</p>
                 <p>You are at the <b>right</b> place!</p>
-                <p>We provide you the best <b>free <span style="color: green">Startup tools</span></b>!</p>
-                <p>Start your <b style="color: green">Startup</b> with <b style="color: green">Startup tools!</b></p>
+                <%--<p>We provide you the best <b>free <span style="color: green">Startup tools</span></b>!</p>--%>
+                <%--<p>Start your <b style="color: green">Startup</b> with <b style="color: green">Startup tools!</b></p>--%>
 
                 <p><a class="btn btn-success btn-lg" href="/#/" role="button">Watch Video
                 </a></p>
