@@ -9,7 +9,7 @@
 
                 <h1><a class="slogan" href="/guide/">Right&nbsptools at&nbspthe&nbspright&nbsptime.</a></h1>
 
-                <p>Just started your <b style="color: green">Startup</b>?</p>
+                <p>Do you have your <b style="color: green">Startup</b> idea?</p>
                 <p>No time, no knowledge, no money? No problem!</p>
                 <p>You are at the <b>right</b> place!</p>
                 <p>We provide you the best <b>free <span style="color: green">Startup tools</span></b>!</p>
