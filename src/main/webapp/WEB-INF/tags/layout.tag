@@ -100,7 +100,7 @@
 
 //            $zopim.livechat.cookieLaw.setDefaultImplicitConsent();
         $zopim.livechat.window.setTitle('Ask About Startup Tools');
-        $zopim.livechat.button.setColor('#A51ABF');
+        $zopim.livechat.button.setColor('#449d44');
 //            $zopim.livechat.button.hide();
 //            $zopim.livechat.window.hide();
         $zopim.livechat.badge.hide();

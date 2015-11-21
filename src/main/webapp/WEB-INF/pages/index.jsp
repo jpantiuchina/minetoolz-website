@@ -7,7 +7,7 @@
             <div class="container">
                 <img src="/resources/images/toolbox.png" class="my-toolbox">
 
-                <h1><a class="slogan" href="/guide/">Right tools at the right time.</a></h1>
+                <h1><a class="slogan" href="/guide/">Right&nbsptools at&nbspthe&nbspright&nbsptime.</a></h1>
 
                 <p>Just started your <b style="color: green">Startup</b>?</p>
                 <p>No time, no knowledge, no money? No problem!</p>
