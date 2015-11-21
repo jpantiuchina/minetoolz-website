@@ -15,13 +15,14 @@
                 <%--<p>We provide you the best <b>free <span style="color: green">Startup tools</span></b>!</p>--%>
                 <%--<p>Start your <b style="color: green">Startup</b> with <b style="color: green">Startup tools!</b></p>--%>
 
-                <p><a class="btn btn-success btn-lg" href="/#/" role="button">Watch Video
+                <p><a class="btn btn-success btn-lg" href="http://goo.gl/forms/xMrQRHZAtP/" role="button">Questionnaire
                 </a></p>
 
             </div>
         </div>
 
         <div class="container">
+            <h2>Start developing your idea with these Startup tools</h2>
             <div class="row">
                 <t:small-tool-box toolNumber="1" toolTitle="Xtensio" urlName="xtensio"
                                   toolFooter="Want to get most in one package only?"/>

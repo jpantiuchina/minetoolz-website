@@ -12,9 +12,6 @@
     <link href="/resources/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
     <link href="/resources/css/site.css" rel="stylesheet">
 
-
-
-
 </head>
 <body>
 
