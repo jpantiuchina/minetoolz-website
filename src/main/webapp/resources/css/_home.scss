@@ -4,7 +4,19 @@
 .my-home-page {
 
 
+
     .jumbotron {
+
+        //background: $jumbotron-background;
+        background: -moz-radial-gradient(center, ellipse cover, #ffffff 0%, #efefef 100%);
+        background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#ffffff), color-stop(100%,#efefef));
+        background: -webkit-radial-gradient(center, ellipse cover, #ffffff 0%,#efefef 100%);
+        background: -o-radial-gradient(center, ellipse cover, #ffffff 0%,#efefef 100%);
+        background: -ms-radial-gradient(center, ellipse cover, #ffffff 0%,#efefef 100%);
+        background: radial-gradient(ellipse at center, #ffffff 0%,#efefef 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#efefef',GradientType=1 );
+
+        padding-top: 100px;
 
         h1 {
             margin-top: 0;

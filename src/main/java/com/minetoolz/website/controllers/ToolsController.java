@@ -170,7 +170,7 @@ class ToolsController
                 "integration, Atlasian Connect for Bitbucket, HipChat, Bamboo, etc. " );
         entityManager.persist(tool);
 
-
+        //main page tools
         tool = new Tool();
         tool.setTinyDescription("Want to get most in one package only?");
         tool.setUrlName("xtensio");
@@ -178,7 +178,6 @@ class ToolsController
         tool.setWebsite("http://xtensio.com");
         tool.setFullDescriptionHtml("<p> Xtensio was born out of the need for easy-to-use tools to help entrepreneurs plan, strategize, and develop their startup. It is a toolbox that is not only offering presentation tools but also interactive templates that will be useful during research, brainstorming, planning and strategy phases of a company. The first set of tools include User Persona Creator, One Pager Builder, Lean Canvas Creator, Fundraising Summary, SWOT Analysis, and Blank Slate – live page building features for monthly reports, html banners, sales pitches, etc.\n" +
                 "All the tools are free. " );
-
         entityManager.persist(tool);
 
         tool = new Tool();
@@ -198,6 +197,33 @@ class ToolsController
         tool.setFullDescriptionHtml("A powerful, yet easy-to-use, cloud-based collaborative video creation platform. Advanced when you need it. Basic when you don’t. Imagination, not automation. You control the look of your video including transitions, fast/slow motion, Green Screen, and more!");
         entityManager.persist(tool);
 
+        tool = new Tool();
+        tool.setTinyDescription("Host and optimize marketing prospect of your video");
+        tool.setUrlName("wistia");
+        tool.setName("Wistia");
+        tool.setWebsite("https://www.wistia.com");
+        tool.setFullDescriptionHtml("Wistia is a video hosting for business. They help businesses to upload their videos online and also to control the performance of how your video is interacting with users. It gives the feedback for each important section or breaking point you need to improve in order to increase the traffic of visitors.\n" +
+                "Why Wistia and no other services like YouTube? Because this tool doesn’t offer only the service of helping customers adding their video online but it is try to help them on the marketing perspectives. It provides tools to customize videos and increase website traffic through Video SEO. \n" +
+                "It offers a trial for 15 days to use it for free and if you feel satisfied there you can upgrade your account period. You don’t need a different email account for different websites. You can use the same account and embed videos from one account onto several different domains/websites. \n" +
+                "The bandwidth is the data gets passed to a viewer when they watch a video. So, every time someone presses play on the video, data gets passed from Wistia’s server to their browsers, which is counted as a bandwidth. \n" +
+                "You can integrate Wistia into your application by finding the info needed here: Wistia is a video hosting for business. They help businesses to upload their videos online and also to control the performance of how your video is interacting with users. It gives the feedback for each important section or breaking point you need to improve in order to increase the traffic of visitors.\n" +
+                "Why Wistia and no other services like YouTube? Because this tool doesn’t offer only the service of helping customers adding their video online but it is try to help them on the marketing perspectives. It provides tools to customize videos and increase website traffic through Video SEO. \n" +
+                "It offers a trial for 15 days to use it for free and if you feel satisfied there you can upgrade your account period. You don’t need a different email account for different websites. You can use the same account and embed videos from one account onto several different domains/websites. \n" +
+                "The bandwidth is the data gets passed to a viewer when they watch a video. So, every time someone presses play on the video, data gets passed from Wistia’s server to their browsers, which is counted as a bandwidth. \n" +
+                "You can integrate Wistia into your application by finding the info needed here: \n");
+        entityManager.persist(tool);
+
+        tool = new Tool();
+        tool.setTinyDescription("pitch training preparation for your starup ");
+        tool.setUrlName("wevideo");
+        tool.setName("wevideo");
+        tool.setWebsite("https://www.wevideo.com");
+        tool.setFullDescriptionHtml("A powerful, yet easy-to-use, cloud-based collaborative video creation platform. Advanced when you need it. Basic when you don’t. Imagination, not automation. You control the look of your video including transitions, fast/slow motion, Green Screen, and more!");
+        entityManager.persist(tool);
+
+
+
+        //end of main page tools
 
         return "redirect:";
     }

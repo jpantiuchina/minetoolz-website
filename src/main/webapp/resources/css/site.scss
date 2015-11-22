@@ -11,7 +11,7 @@ body {
 }
 
 .btn-success {
-    margin-left: 80px;
+    margin-left: 50px;
 }
 //
 //.btn-success:hover {
@@ -37,9 +37,7 @@ a:focus, a:hover {
     color: $second-color;
 }
 
-.jumbotron {
-background: $jumbotron-background;
-}
+
 :target {
     -webkit-animation: from-yellow-to-white 5s;
        -moz-animation: from-yellow-to-white 5s;
