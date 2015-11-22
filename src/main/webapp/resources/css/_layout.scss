@@ -39,7 +39,9 @@
 
 
 
-
+.glyphicon {
+    width: 14px !important;
+    height: 14px !important; }
 
 
 // Footer
@@ -53,8 +55,13 @@ html {
 $footerHeight: 44px;
 
 body {
-    margin-bottom: $footerHeight + 30px
+    margin-bottom: $footerHeight + 30px;
+
+
+
+
 }
+
 
 
 footer {

@@ -34,13 +34,13 @@ class SiteController
     }
 
     //added because of error in guide page
-    @RequestMapping(path = "/guide/", method = RequestMethod.GET)
+    @RequestMapping(path = "/allTools/", method = RequestMethod.GET)
     public String guide(ModelMap modelMap)
     {
         List<Tool> tools = entityManager.createQuery("SELECT t FROM Tool t ORDER BY name", Tool.class).
                 getResultList();
         modelMap.addAttribute("tools", tools);
-        return "guide";
+        return "allTools";
     }
     //end
 
@@ -93,10 +93,10 @@ class SiteController
         return "message";
     }
 
-    @RequestMapping("/guide/")
-    public String guide()
+    @RequestMapping("/allTools/")
+    public String allTools()
     {
-        return "guide";
+        return "allTools";
     }
 
     @RequestMapping(path = "/subscribe/", method = RequestMethod.GET)

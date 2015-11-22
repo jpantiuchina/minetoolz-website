@@ -33,7 +33,9 @@
         <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-right">
                 <li class="${activeMenuItem == 'home'         ? 'active' : ''}"><a href="/">Home</a></li>
-                <li class="${activeMenuItem == 'guide'        ? 'active' : ''}"><a href="/guide/">Quick Start</a></li>
+                <li class="${activeMenuItem == 'allTools'        ? 'active' : ''}"><a href="/allTools/">
+                    <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+                    Tools</a></li>
                 <%--<li class="${activeMenuItem == 'tools'        ? 'active' : ''}"><a href="/tools/">Tools</a></li>--%>
                 <%--<li class="${activeMenuItem == 'contacts'     ? 'active' : ''}"><a href="/contacts/">Contacts</a></li>--%>
                 <li class="${activeMenuItem == 'publications' ? 'active' : ''}"><a href="/publications/">Publications</a></li>
