@@ -15,9 +15,12 @@
                 <%--<p>We provide you the best <b>free <span style="color: green">Startup tools</span></b>!</p>--%>
                 <%--<p>Start your <b style="color: green">Startup</b> with <b style="color: green">Startup tools!</b></p>--%>
 
-                <p><a class="btn btn-primary btn-lg" href="" role="button">Watch Video
-                </a>
+                <%--<p><a class="btn btn-primary btn-lg" href="" role="button">Watch Video--%>
+                <%--</a>--%>
 
+                <script charset="ISO-8859-1" src="//fast.wistia.com/assets/external/E-v1.js" async></script><div class="wistia_embed wistia_async_b2m0g6d14j popover=true popoverContent=link" style="display:inline"><a class="btn btn-primary btn-lg" href="#" role="button">Watch Video</a></div>
+
+                <p>
                 <a class="btn btn-success btn-lg" href="https://docs.google.com/forms/d/1ZZBF-AJL_TSyl47rhoV-8puwfeESgJif_PjtuZW2Whs/viewform?usp=send_form" role="button">Questionnaire
                 </a></p>
 
@@ -28,7 +31,7 @@
             <h2>Start developing your idea with these Startup tools</h2>
             <div class="row">
                 <t:small-tool-box toolNumber="1" toolTitle="Xtensio" urlName="xtensio"
-                                  toolFooter="Personas"/>
+                                  toolFooter="Personas, Startup One Page Builder, Lean Canvas"/>
                 <t:small-tool-box toolNumber="2" toolTitle="Logogarden" urlName="logogarden"
                                   toolFooter="Start with an amazing logo. It's free!"/>
                 <t:small-tool-box toolNumber="3" toolTitle="wevideo " urlName="wevideo"
