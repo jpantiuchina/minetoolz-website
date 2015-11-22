@@ -15,7 +15,7 @@
                 <%--<p>We provide you the best <b>free <span style="color: green">Startup tools</span></b>!</p>--%>
                 <%--<p>Start your <b style="color: green">Startup</b> with <b style="color: green">Startup tools!</b></p>--%>
 
-                <p><a class="btn btn-primary btn-lg" href="#" role="button">Watch Video
+                <p><a class="btn btn-primary btn-lg" href="" role="button">Watch Video
                 </a>
 
                 <a class="btn btn-success btn-lg" href="https://docs.google.com/forms/d/1ZZBF-AJL_TSyl47rhoV-8puwfeESgJif_PjtuZW2Whs/viewform?usp=send_form" role="button">Questionnaire
@@ -28,11 +28,17 @@
             <h2>Start developing your idea with these Startup tools</h2>
             <div class="row">
                 <t:small-tool-box toolNumber="1" toolTitle="Xtensio" urlName="xtensio"
-                                  toolFooter="Dron's text "/>
+                                  toolFooter="Personas"/>
                 <t:small-tool-box toolNumber="2" toolTitle="Logogarden" urlName="logogarden"
                                   toolFooter="Start with an amazing logo. It's free!"/>
                 <t:small-tool-box toolNumber="3" toolTitle="wevideo " urlName="wevideo"
                                   toolFooter="Easily create outstanding videos"/>
+                <t:small-tool-box toolNumber="4" toolTitle="Wistia" urlName="wistia"
+                                  toolFooter="Host and optimize marketing prospect of your video"/>
+                <t:small-tool-box toolNumber="5" toolTitle="Pitch" urlName="pitch"
+                                  toolFooter="Pitch Training Preparation
+                                "/>
+
             </div>
 
             <div class="planes">
