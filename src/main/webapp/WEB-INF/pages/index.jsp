@@ -15,7 +15,10 @@
                 <%--<p>We provide you the best <b>free <span style="color: green">Startup tools</span></b>!</p>--%>
                 <%--<p>Start your <b style="color: green">Startup</b> with <b style="color: green">Startup tools!</b></p>--%>
 
-                <p><a class="btn btn-success btn-lg" href="https://docs.google.com/forms/d/1ZZBF-AJL_TSyl47rhoV-8puwfeESgJif_PjtuZW2Whs/viewform?usp=send_form" role="button">Questionnaire
+                <p><a class="btn btn-primary btn-lg" href="#" role="button">Watch Video
+                </a>
+
+                <a class="btn btn-success btn-lg" href="https://docs.google.com/forms/d/1ZZBF-AJL_TSyl47rhoV-8puwfeESgJif_PjtuZW2Whs/viewform?usp=send_form" role="button">Questionnaire
                 </a></p>
 
             </div>

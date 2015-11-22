@@ -6,8 +6,12 @@ body {
 }
 
 
-.btn-success {
+.btn-success, .btn-primary {
     margin-top: 60px;
+}
+
+.btn-success {
+    margin-left: 80px;
 }
 //
 //.btn-success:hover {
