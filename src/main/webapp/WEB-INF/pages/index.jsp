@@ -20,9 +20,9 @@
 
                 <script charset="ISO-8859-1" src="//fast.wistia.com/assets/external/E-v1.js" async></script><div class="wistia_embed wistia_async_b2m0g6d14j popover=true popoverContent=link" style="display:inline"><a class="btn btn-primary btn-lg" href="#" role="button">Watch Video</a></div>
 
-                <p>
+
                 <a class="btn btn-success btn-lg" href="https://docs.google.com/forms/d/1ZZBF-AJL_TSyl47rhoV-8puwfeESgJif_PjtuZW2Whs/viewform?usp=send_form" role="button">Questionnaire
-                </a></p>
+                </a>
 
             </div>
         </div>
