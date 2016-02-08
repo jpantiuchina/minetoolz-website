@@ -86,7 +86,7 @@ class SiteController
         return "publications";
     }
 
-    @RequestMapping("/login/")
+    @RequestMapping(path = {"/login/", "/registration/"})
     public String login(ModelMap modelMap)
     {
         modelMap.addAttribute("message", "Coming soon... ");

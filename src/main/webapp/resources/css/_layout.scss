@@ -2,13 +2,23 @@
 
 
 .navbar {
-    .navbar-brand img { margin-top: -2px }
+    .navbar-brand img { margin-top: -4px }
 }
 
 
+//.navbar-inverse {
+//    background-color: black;
+//
+//    .navbar-nav>.active>a:hover
+//    .navbar-nav > li > a:hover,
+//    .navbar-brand:focus {
+//        color: red
+//    }
+//}
+
 .navbar-inverse {
-    background-color: $main-color;
-    border-color: $second-color;
+    background-color: black;
+//    border-color: $second-color;
 
     .navbar-nav > li > a,
     .navbar-nav > li > a:hover,
@@ -27,21 +37,16 @@
     .navbar-nav > .active > a,
     .navbar-nav > .active > a:hover,
     .navbar-nav > .active > a:focus {
-        background-color: $second-color;
+        background-color: saddlebrown;
     }
 }
 
-.nav-pills > li.active > a,
-.nav-pills > li.active > a:focus,
-.nav-pills > li.active > a:hover {
-    background-color: $main-color;
-}
+//.nav-pills > li.active > a,
+//.nav-pills > li.active > a:focus,
+//.nav-pills > li.active > a:hover {
+//    background-color: $main-color;
+//}
 
-
-
-.glyphicon {
-    width: 14px !important;
-    height: 14px !important; }
 
 
 // Footer
@@ -56,10 +61,6 @@ $footerHeight: 44px;
 
 body {
     margin-bottom: $footerHeight + 30px;
-
-
-
-
 }
 
 

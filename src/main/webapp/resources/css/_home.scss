@@ -5,49 +5,17 @@
 
 
 
-    .jumbotron {
+}
 
-        //background: $jumbotron-background;
-        background: -moz-radial-gradient(center, ellipse cover, #ffffff 0%, #efefef 100%);
-        background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#ffffff), color-stop(100%,#efefef));
-        background: -webkit-radial-gradient(center, ellipse cover, #ffffff 0%,#efefef 100%);
-        background: -o-radial-gradient(center, ellipse cover, #ffffff 0%,#efefef 100%);
-        background: -ms-radial-gradient(center, ellipse cover, #ffffff 0%,#efefef 100%);
-        background: radial-gradient(ellipse at center, #ffffff 0%,#efefef 100%);
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#efefef',GradientType=1 );
 
-        padding-top: 100px;
+.home-page-main-picture {
+    background-image: url("../images/background.jpg");
+    background-size: 100% 100%;
+    height: 56vw;
+    margin-top: -20px;
 
-        h1 {
-            margin-top: 0;
-            color: $main-color
-        }
-        p {
-            color: $darkest-color;
-                margin: 0;
-        }
-
-        margin-top: -20px;
-
+    h1 {
+        margin-top: 0; padding-top: 40vw;
+        .slogan { color: white }
     }
-
-
-    .planes {
-        margin: 100px;
-    }
-
-    .my-toolbox {
-        width: 425px;
-        height: 422px;
-        float: right;
-    }
-
-    @media (max-width: 767px) {
-        .my-toolbox { width: 194px; height: 151px }
-    }
-
-    @media (max-width: 512px) {
-        .my-toolbox { display: none }
-    }
-
 }
